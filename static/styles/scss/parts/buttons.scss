@@ -1,0 +1,15 @@
+.button {
+    @include center;
+    @include boldsmall;
+    min-width: 160px;
+    height: 52px;
+    background-color: $main-color;
+    border: 1px solid $border-color;
+    border-radius: 48px;
+    box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
+
+    &_active {
+        background-color: $subcolor;
+        color: $main-color;
+    }
+}

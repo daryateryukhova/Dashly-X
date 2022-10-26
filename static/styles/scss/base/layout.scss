@@ -3,10 +3,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    background-color: $main-color;
 }
 
 .wrapper {
     max-width: 1250px;
+    height: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }

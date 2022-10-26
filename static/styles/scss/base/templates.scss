@@ -3,3 +3,23 @@ $subcolor: #1476FF;
 $text-color: #0B0E2C;
 $text-subcolor: #6F7182;
 $border-color: #E9EAF3;
+
+@mixin flexsbc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boldsmall {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
