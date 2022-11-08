@@ -1,0 +1,134 @@
+.presentation {
+
+    @include flexsbc;
+    border-top: 2px solid #F7F9FC;
+
+    &__block-left {
+
+        flex: 0 0 100%;
+
+        @media (max-width: 992px) {
+            z-index: 2;
+        }
+
+        &_wrapper {
+            max-width: 1250px;
+            height: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        &_body {
+            width: calc( 560 / 1250 * 100%);
+
+            @media (max-width: 992px) {
+                width: 100%;
+                padding: 100px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 66px;
+        color: $text-color;
+
+    }
+
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 43px;
+
+        @media (max-width: 992px) {
+            color: $text-color;
+        }
+    }
+
+    &__link {
+
+        &-container {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+
+    &__link:first-child {
+        margin-right: 14px;
+    }
+
+    &__block-right {
+        background-color: #F7F9FC;
+        padding: 80px 0;
+        flex: 0 0 100%;
+        transform: translate( -40%, 0);
+
+        @media (max-width: 992px) {
+            padding: 10px 0;
+            z-index: 1;
+            transform: translate( -100%, 0);
+            opacity: 0.2;
+        }
+    }
+
+    &__image {
+        position: relative;
+        transform: translate(-150px, 0);
+
+        @media (max-width: 992px) {
+            transform: translate(0, 0);
+        }
+    }
+
+    &__screens-number {
+
+        position: absolute;
+        top: 20%;
+        left: 15%;
+
+        @media (max-width: 992px) {
+            opacity: 0.6;
+            top: 60%;
+            left: 60%;
+        }
+
+		&_container {
+            position: absolute;
+            top: 38%;
+            left: 39%;
+		}
+
+		&_number {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 66px;
+            color: $main-color;
+		}
+
+		&_subtitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 23px;
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
+            color: $main-color;
+		}
+	}
+
+}
+
+
+
+

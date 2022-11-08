@@ -1,7 +1,7 @@
 .button {
     @include center;
     @include boldsmall;
-    min-width: 160px;
+    width: 160px;
     height: 52px;
     background-color: $main-color;
     border: 1px solid $border-color;

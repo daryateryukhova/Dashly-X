@@ -1,17 +1,35 @@
 .header {
 
-min-height: 120px;
-
     &__container-flex {
         @include flexsbc;
-        min-height: 100%
+        padding: 32px 0;
+        height: 100%;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            min-height: auto;
+        }
     }
 
     &__logo {
+
+        @media (max-width: 767px) {
+            margin: 0 0 45px 0;
+        }
+
+        img {
+            @media (max-width: 767px) {
+                width: 250px;
+            }
+        }
     }
 
     &__nav {
         @include flexsbc;
+
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__nav-pages {
@@ -20,6 +38,10 @@ min-height: 120px;
 
         @media (max-width: 992px) {
             margin: 0 28px 0 0;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0;
         }
     }
 
@@ -46,11 +68,21 @@ min-height: 120px;
         @include boldsmall;
     }
 
+    &__nav-link {
+        @media (max-width: 767px) {
+            margin: 0 0 20px 0;
+        }
+    }
+
     &__nav-link:first-of-type {
         margin: 0 22px 0 0;
 
         @media (max-width: 992px) {
             margin: 0 15px 0 0;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0 0 40px 0;
         }
     }
 }

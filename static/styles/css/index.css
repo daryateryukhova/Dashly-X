@@ -87,7 +87,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  min-width: 160px;
+  width: 160px;
   height: 52px;
   background-color: #FFFFFF;
   border: 1px solid #E9EAF3;
@@ -99,21 +99,40 @@ a {
   color: #FFFFFF;
 }
 
-.header {
-  min-height: 120px;
-}
 .header__container-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 100%;
+  padding: 32px 0;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .header__container-flex {
+    flex-direction: column;
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    margin: 0 0 45px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo img {
+    width: 250px;
+  }
 }
 .header__nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .header__nav {
+    flex-direction: column-reverse;
+  }
 }
 .header__nav-pages {
   display: flex;
@@ -125,6 +144,11 @@ a {
 @media (max-width: 992px) {
   .header__nav-pages {
     margin: 0 28px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .header__nav-pages {
+    margin: 0;
   }
 }
 .header__pages-number {
@@ -154,6 +178,11 @@ a {
   font-size: 14px;
   line-height: 16px;
 }
+@media (max-width: 767px) {
+  .header__nav-link {
+    margin: 0 0 20px 0;
+  }
+}
 .header__nav-link:first-of-type {
   margin: 0 22px 0 0;
 }
@@ -161,6 +190,135 @@ a {
   .header__nav-link:first-of-type {
     margin: 0 15px 0 0;
   }
+}
+@media (max-width: 767px) {
+  .header__nav-link:first-of-type {
+    margin: 0 0 40px 0;
+  }
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #F7F9FC;
+}
+.presentation__block-left {
+  flex: 0 0 100%;
+}
+@media (max-width: 992px) {
+  .presentation__block-left {
+    z-index: 2;
+  }
+}
+.presentation__block-left_wrapper {
+  max-width: 1250px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.presentation__block-left_body {
+  width: 44.8%;
+}
+@media (max-width: 992px) {
+  .presentation__block-left_body {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.presentation__title {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: #0B0E2C;
+}
+.presentation__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 32px;
+  color: #6F7182;
+  margin-bottom: 43px;
+}
+@media (max-width: 992px) {
+  .presentation__subtitle {
+    color: #0B0E2C;
+  }
+}
+.presentation__link-container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 992px) {
+  .presentation__link-container {
+    display: none;
+  }
+}
+.presentation__link:first-child {
+  margin-right: 14px;
+}
+.presentation__block-right {
+  background-color: #F7F9FC;
+  padding: 80px 0;
+  flex: 0 0 100%;
+  transform: translate(-40%, 0);
+}
+@media (max-width: 992px) {
+  .presentation__block-right {
+    padding: 10px 0;
+    z-index: 1;
+    transform: translate(-100%, 0);
+    opacity: 0.2;
+  }
+}
+.presentation__image {
+  position: relative;
+  transform: translate(-150px, 0);
+}
+@media (max-width: 992px) {
+  .presentation__image {
+    transform: translate(0, 0);
+  }
+}
+.presentation__screens-number {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+@media (max-width: 992px) {
+  .presentation__screens-number {
+    opacity: 0.6;
+    top: 60%;
+    left: 60%;
+  }
+}
+.presentation__screens-number_container {
+  position: absolute;
+  top: 38%;
+  left: 39%;
+}
+.presentation__screens-number_number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 66px;
+  color: #FFFFFF;
+}
+.presentation__screens-number_subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=index.css.map */

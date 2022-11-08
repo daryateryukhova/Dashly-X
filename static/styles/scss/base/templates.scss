@@ -23,3 +23,11 @@ $border-color: #E9EAF3;
     font-size: 14px;
     line-height: 16px;
 }
+
+@mixin subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    color: $text-subcolor;
+}
