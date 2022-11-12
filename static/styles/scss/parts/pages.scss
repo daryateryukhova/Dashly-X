@@ -1,0 +1,77 @@
+.pages {
+
+    background-color: #F7F9FC;
+    padding: 0 0 180px 0;
+
+    &__title {
+        padding: 179px 0 0 0;
+        margin: 0 0 18px 0;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 52px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        margin: 0 0 60px 0;
+        text-align: center;
+    }
+
+    &__buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: calc( 726 / 1250 * 100%);
+        margin: 0 auto 64px auto;
+
+        button {
+            margin: 0 14px 14px 0;
+            cursor: pointer;
+        }
+
+        a {
+            margin: 0 14px 0 0;
+        }
+    }
+}
+
+.pages-container {
+
+    margin: 0 auto 48px auto;
+
+    &__title {
+        @include h2;
+        margin: 0 0 32px 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+
+        width: calc( 610 / 1250 * 100% );
+        margin: 0 28px 48px 0;
+
+        &-wrapper {
+            @include rounded-rectangle;
+            margin: 0 0 25px 0;
+            padding: 33px;
+        }
+    }
+
+    &__card:nth-child(2n) {
+        margin: 0 0 0 0;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: $text-color;
+    }
+}
