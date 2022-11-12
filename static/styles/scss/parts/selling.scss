@@ -1,0 +1,40 @@
+.selling {
+
+    margin: -40px;
+
+    &__container {
+
+        @include rounded-rectangle;
+        transform: translate( 0, -180px );
+        border: none;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        display: flex;
+        background-color: $subcolor;
+
+        &_left-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 84px 0 84px;
+        }
+    }
+
+    &__title {
+        @include h2;
+        margin: 0 0 8px 0;
+        color: $main-color;
+        text-align: left;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        margin: 0 0 43px 0;
+        color: $main-color;
+        font-size: 10px;
+    }
+
+    &__button {
+        color: $subcolor;
+    }
+}

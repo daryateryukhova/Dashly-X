@@ -1,7 +1,7 @@
 .presentation {
 
     @include flexsbc;
-    border-top: 2px solid #F7F9FC;
+    border-top: 2px solid $bg-color;
 
     &__block-left {
 

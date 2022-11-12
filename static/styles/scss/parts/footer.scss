@@ -1,0 +1,23 @@
+.footer {
+
+    background-color: $bg-color;
+
+    &__container {
+        @include center;
+        @include subtitle;
+        min-height: 81px;
+        line-height: 26px;
+    }
+
+    &__copyright {
+        margin: 0 6px 0 0;
+    }
+
+    &__link {
+        color: $subcolor;
+    }
+
+    &__author {
+    }
+}
+
