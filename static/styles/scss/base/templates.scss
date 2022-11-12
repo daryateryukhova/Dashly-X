@@ -32,6 +32,11 @@ $border-color: #E9EAF3;
     line-height: 48px;
     text-align: center;
     color: $text-color;
+
+    @media (max-width: 767px) {
+        font-size: 25px;
+        line-height: 34px;
+    }
 }
 
 @mixin subtitle {
@@ -40,6 +45,10 @@ $border-color: #E9EAF3;
     font-size: 14px;
     line-height: 32px;
     color: $text-subcolor;
+
+    @media (max-width: 767px) {
+        line-height: 25px;
+    }
 }
 
 @mixin rounded-rectangle {

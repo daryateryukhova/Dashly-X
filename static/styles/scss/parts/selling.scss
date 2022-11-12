@@ -1,6 +1,6 @@
 .selling {
 
-    margin: -40px;
+    margin: 0 0 -40px 0;
 
     &__container {
 
@@ -12,11 +12,31 @@
         display: flex;
         background-color: $subcolor;
 
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+            border-bottom-right-radius: 20px;
+        }
+
         &_left-block {
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 0 84px 0 84px;
+
+            @media (max-width: 992px) {
+                align-items: center;
+                padding: 40px 84px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 40px 15px;
+            }
         }
     }
 
@@ -25,13 +45,17 @@
         margin: 0 0 8px 0;
         color: $main-color;
         text-align: left;
+
+        @media (max-width: 992px) {
+            text-align: center;
+        }
     }
 
     &__subtitle {
         @include subtitle;
         margin: 0 0 43px 0;
         color: $main-color;
-        font-size: 10px;
+
     }
 
     &__button {
